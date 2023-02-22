@@ -1,0 +1,224 @@
+                        /*----------
+                           Nav bar
+                        ------------*/
+.navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    
+}
+.sty{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+                            /*-------
+                                UL 
+                            -------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff00c3;
+}
+                            /*--------
+                                li
+                            ---------*/
+li {
+    float: left;
+    box-sizing: border-box;
+    margin-top:10px;
+}  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+li a.active
+{
+    background-color: #df6cc4;
+    color: #000000;
+    border-radius: 6.5px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);  
+}
+li a:hover {
+    background-color: #d161b7;
+    color: #000000;
+    border-radius: 6.5px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.accelerated.box {
+    transition: transform 650ms;
+    will-change: transform;
+    background: #ff00c3;
+    margin-left: 40px;
+}
+.accelerated.box:hover,
+.accelerated.box:focus 
+{
+    transform: translateY(10px);
+}
+                                         /*--------
+                                            Logo
+                                         ---------*/
+.logo 
+{
+    width: 120px;
+    height: 60px;
+}
+                                        /*----------
+                                            Icon
+                                        -----------*/
+i{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+i.ds{
+    color: white;
+}
+i.ds:hover{
+    color: #000000;
+}
+                                /*-----------
+                                    Image
+                                ------------*/
+.IMG
+{
+    background-size: contain;
+    position: center;
+    margin-left: 45px;
+    background-repeat: no-repeat;
+    max-width: 80%;
+    height: 304px;
+    border-radius: 60%;
+    background: #000000;
+    transition: opacity 0.4s ease-in-out;
+    
+}
+.aboutbox
+{
+    display: flex;
+    margin-top: 30%;
+    margin-bottom: 50px;
+}
+                                    /*-----------
+                                        About
+                                    -------------*/
+.about
+{
+    text-align: left;
+    margin-left: 30px;
+}
+.about p
+{
+    text-align: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+} 
+                                 /*---------------
+                                    Solid border
+                                 -----------------*/
+hr.solid 
+{
+    border-top: 3px solid #000000;
+}
+                                /*-----------
+                                    Button 
+                                ------------*/
+.btn 
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    will-change: transform;
+    transition: transform 700ms;
+}
+.btn button
+{
+    background-color: #ff00c3;
+    color: white;
+    border: #ff00c3;
+    border-radius: 6px;
+}
+.btn button:hover
+{
+    color: #ffffff;
+    background-color: #000000;
+    transition: transform 150ms;
+    transform: translateY(-9px);   
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+                            /*------------------
+                                Image Gallary
+                            -------------------*/
+.content
+{
+    text-align: center;
+    margin-top: -47%;
+}
+.content h1
+{
+    font-size: 140px;
+    color: #ff00dd;
+    font-weight: 600;
+}
+.content a
+{
+    text-decoration: none;
+    display: inline-block;
+    color: #ff00dd;
+    font-size: 24px;
+    border: 3px solid #ff00dd;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.back-video{
+    width: 102%;
+    background-color: rgba(0,0,0,0.5);
+        
+}
+                                /*-----------------------
+                                    Image Gallery Card
+                                ------------------------*/
+body 
+{
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.row > .column {
+    /* padding: 0 8px; */
+    margin: 5px;
+}                          
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}                          
+.column 
+{
+    background: #000000;
+    float: left;
+    width: 24.2%;
+}                          
+.column:hover 
+{    
+    opacity: 0.7;
+}
+

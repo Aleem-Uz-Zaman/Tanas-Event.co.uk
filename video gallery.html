@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="video-gallery-style.css">
+    <title>Tanas Events</title>
+</head>
+<body>
+  
+    <nav class="navbar">
+      <ul class="wrapper">
+          <li class="janky box"><a href="index.html"><img class="logo" src="logo.png" title="header-logo" alt="header-logo"></a></li>
+          <li class="accelerated box"><a href="index.html"><i class="fa-solid fa-house ds" aria-hidden="true"></i> Home </a></li>
+          <li class="accelerated box"><a href="about.html"><i class="fa-solid fa-users ds" aria-hidden="true"></i> About Us </a></li>
+          <li class="accelerated box"><a href="image gallery.html"><i class="fa-solid fa-images ds" aria-hidden="true"></i> Image Gallery </a></li>
+          <li class="accelerated box"><a href="our events.html"><i class="fa-solid fa-calendar-days ds" aria-hidden="true"></i> Our Events </a></li>
+          <li class="accelerated box"><a class="active" href="video gallery.html"><i class="fa-solid fa-play ds" aria-hidden="true"></i> Video Gallery </a></li>
+          <li class="accelerated box"><a href="Contact us.html"><i class="fa-solid fa-id-card ds" aria-hidden="true"></i> Content Us </a></li>
+      </ul>
+    </nav>
+   
+                                     <!------------------------
+                                      Video Banner Section 
+                                    ------------------------->
+
+  <div class="hero">
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="D:\Aleem\Office\Tanas Events\Video/video-gallery.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <h1>TANAS EVENTS</h1>
+      <a href="video gallery.html"><b>Explore</b></a>
+    </div>
+  </div>  
+                    <!---------------
+                      Video Gallery
+                    ---------------->
+  <div class="container-video">
+    <h1>Video Gallary</h1>
+    <hr class="solid" style="width: 20%;margin-left: 40%;margin-top: -50px;" >
+    <h2>Women</h2>
+    <hr class="solid" style="width: 10%; margin-left: 45%; margin-top: -55px;" >
+    <div class="row-video">
+        <div class="col-video">
+            <div class="feature-img">
+                <img src="Image/brand.png" width="100%">
+                <img src="Image/youtube.png" class="play-btn" 
+                    onclick="playVideo('video/brand.mp4')">
+            </div>
+        </div>
+        <div class="col-video">
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="Image/brand1.png">
+                    <img src="Image/play (1).png" class="play-btn"
+                        onclick="playVideo('video/brand1.mp4')">
+                </div>
+                <p> SS Luxury Lawn ’22 by Hussain Rehar <br>
+                      رھگولی - Asag</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="Image/brand2.png">
+                    <img src="Image/play (1).png" class="play-btn"
+                        onclick="playVideo('video/brand2.mp4')">
+                </div>
+                <p> SS Luxury Lawn ’22 by Hussain Rehar <br>
+                     رھگولی - Asag</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                    <img src="Image/brand3.png">
+                    <img src="Image/play (1).png" class="play-btn"
+                        onclick="playVideo('video/brand3.mp4')">
+                </div>
+                <p> KARANDI Autumn Winter <br> 
+                    Unstitched'22 by Hussain Rehar</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="video-player" id="videoPlayer">
+    <video width="100%" style="margin-top: 190%;" controls autoplay id="myVideo">
+        <source src="video/brand.mp4" type="video/mp4">
+    </video>
+    <img src="Image/close(R).png" class="close-btn" 
+    onclick="stopVideo()">
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous">
+</script>
+<footer>
+  <h3 style="font-family: 'Secular One', sans-serif; background-color:#ff00bf; 
+    padding: 0; margin: 0; text-align: center; color: #ffff; margin-top: 25%;">
+    <b>LiveBits</b>
+  </h3>
+</footer>
+                                      <!--------
+                                        Script
+                                      ---------->
+<script>
+    var videoPlayer = document.getElementById("videoPlayer");
+    var myVideo = document.getElementById("myVideo");
+
+    function stopVideo()
+    {
+        videoPlayer.style.display = "none";
+        myVideo.pause();
+    }
+    function playVideo(file)
+    {
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+    }
+</script>
+</body>
+</html>

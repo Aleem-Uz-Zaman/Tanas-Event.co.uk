@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="image-gallery.css">
+    <style>
+      .mySlides {
+        display:none;
+      } 
+    </style>
+    <title>Tanas Events</title>
+</head>
+<body>
+  <div class="navbar">
+    <nav>
+            <ul class="wrapper">
+                <li class="janky box"><a href="index.html"><img class="logo" src="logo.png" title="header-logo" alt="header-logo"></a></li>
+                <li class="accelerated box"><a href="index.html"><i class="fa-solid fa-house ds" aria-hidden="true"></i> Home </a></li>
+                <li class="accelerated box"><a href="about.html"><i class="fa-solid fa-users ds" aria-hidden="true"></i> About Us </a></li>
+                <li class="accelerated box"><a class="active" href="image gallery.html"><i class="fa-solid fa-images ds" aria-hidden="true"></i> Image Gallery </a></li>
+                <li class="accelerated box"><a href="our events.html"><i class="fa-solid fa-calendar-days ds" aria-hidden="true"></i> Our Events </a></li>
+                <li class="accelerated box"><a href="video gallery.html"><i class="fa-solid fa-play ds" aria-hidden="true"></i> Video Gallery </a></li>
+                <li class="accelerated box"><a href="Contact us.html"><i class="fa-solid fa-id-card ds" aria-hidden="true"></i> Content Us </a></li>
+            </ul>
+    </nav>
+  <div>
+                                  <!-------------------------
+                                      Video Banner Section 
+                                  --------------------------->
+  <div class="hero">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="D:\Aleem\Office\Tanas Events\Video/fashion2.mp4" type="video/mp4">
+      </video>
+    <div class="content">
+      <h1>TANAS EVENTS</h1>
+      <a href="image gallery.html"><b>Explore</b></a>
+    </div>
+  </div>
+                        <!-- Image Gallery -->
+                            <!-- 1 -->
+  <div>
+    <h2 style="text-align:center; margin-top: 27%; height: 30px;"><b>Image Gallery</b></h2>
+    <hr class="solid" style="width: 13.5%; margin-left: 43%;">
+    <div class="row">
+      <div class="column">
+        <img src="fashion1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="fashion2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="fashion3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="fashion4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>   
+                        <!-- 2 -->
+  <div>
+    <br>
+    <div class="row">
+      <div class="column">
+        <img src="fashion12.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="fashion13.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="fashion14.1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="fashion15.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>   
+                        <!-- 3 -->
+  <div>
+    <br>
+    <div class="row">
+      <div class="column">
+        <img src="fashion5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="fashion6.1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="fashion7.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="fashion7.1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>   
+                        <!-- 4 -->
+  <div>
+    <br>
+    <div class="row">
+      <div class="column">
+        <img src="fashion17.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="fashion16.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="fashion18.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="fashion19.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>  
+                          <!-- 5 -->
+  <div>
+    <br>
+    <div class="row">
+      <div class="column">
+        <img src="fashion8.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="fashion9.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="fashion10.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="fashion11.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div> 
+  <h3 style="font-family: 'Secular One', sans-serif; 
+    padding: 0; margin: 0; background-color:#ff00bf; text-align: center; color: #ffff;">
+    <b>LiveBits</b>
+  </h3>
+                                                      <!-- Script -->
+                                               <!-- Image Banner Script -->
+  <script class="image-banner">
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+                                                    <!-- Image Gallery Script -->
+        <script class="image-gallery">
+          var imageSlides = 1;
+          showDiv(imageSlides);
+          
+          function plusDiv(n) {
+            showDiv(imageSlides += n);
+          }
+          function showDiv(n) {
+            var i;
+            var x = document.getElementsByClassName("imageSlides");
+            if (n > x.length) {imageSlides = 1}
+            if (n < 1) {imageSlides = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            x[imageSlides-1].style.display = "block";  
+          }
+          </script>
+
+          <script>
+            function openModal() 
+          {
+            document.getElementById("myModal").style.display = "block";
+          }
+  
+            function closeModal()
+          {
+            document.getElementById("myModal").style.display = "none";
+          }
+  
+            var slideIndex = 1;
+            showSlides(slideIndex);
+  
+            function plusSlides(n) 
+          {
+            showSlides(slideIndex += n);
+          }
+  
+            function currentSlide(n) 
+          {
+            showSlides(slideIndex = n);
+          }
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+</body>
+</html>
